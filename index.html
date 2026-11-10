@@ -11,7 +11,25 @@
 <meta property="og:url" content="https://ksuarezm09.github.io/">
 <meta property="og:image" content="https://ksuarezm09.github.io/img/foto.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}</style>
+<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}/* Certificados compactos */
+.ci-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.ci { position: relative; display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 12px 14px 12px 12px; border-radius: 18px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .22); color: #fff; font: inherit; cursor: pointer; transition: transform .25s, box-shadow .25s, background .25s, color .25s, border-color .25s; }
+.ci:hover, .ci:focus-visible { transform: translateY(-3px); background: var(--g-sand); color: var(--navy-deep); border-color: transparent; box-shadow: 0 18px 28px -14px rgba(0, 0, 0, .6), inset 0 1px 0 rgba(255, 255, 255, .85); }
+.ci-thumb { flex: 0 0 92px; aspect-ratio: 1400 / 1080; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 6px 14px -6px rgba(0, 0, 0, .5); }
+.ci-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ci-text { min-width: 0; flex: 1; }
+.ci-text b { display: block; font: 700 .92rem/1.25 var(--font-display); letter-spacing: -.02em; }
+.ci-text small { display: block; margin-top: 4px; font: 500 12px/1.4 var(--font-mono); opacity: .8; }
+.ci-go { flex: 0 0 auto; font-size: 18px; opacity: .6; transition: transform .25s, opacity .25s; }
+.ci:hover .ci-go, .ci:focus-visible .ci-go { opacity: 1; transform: translate(2px, -2px); }
+#lb .lb-box { max-width: min(100%, 900px); max-height: 100%; display: flex; flex-direction: column; gap: 14px; cursor: default; }
+#lb .lb-box img { max-width: 100%; max-height: calc(100vh - 150px); object-fit: contain; align-self: center; }
+.lb-cap { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; color: #fff; }
+.lb-cap[hidden] { display: none; }
+.lb-cap b { font: 700 1rem/1.3 var(--font-display); letter-spacing: -.02em; flex: 1 1 100%; }
+.lb-cap span { font: 500 13px/1.4 var(--font-mono); opacity: .85; }
+.lb-cap a { color: var(--navy-deep); background: var(--g-sand); font-weight: 700; font-size: 13px; padding: 9px 16px; border-radius: 999px; text-decoration: none; }
+@media (max-width: 760px) { .ci-list { grid-template-columns: minmax(0, 1fr); } .ci-thumb { flex-basis: 78px; } }</style>
 <title>Kevin Mauricio Suárez Martínez · CTO</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -251,7 +269,25 @@ h1 .hl { color: var(--sand); }
 .chip:hover { border-color: var(--sand); transform: translateY(-2px); }
 .chip[aria-pressed="true"] { background: var(--g-sand); color: var(--navy-deep); border-color: var(--sand); box-shadow: 0 10px 18px -8px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .8); }
 .more { display: flex; justify-content: center; margin-top: 34px; }
-.more[hidden] { display: none; }</style>
+.more[hidden] { display: none; }/* Certificados compactos */
+.ci-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.ci { position: relative; display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 12px 14px 12px 12px; border-radius: 18px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .22); color: #fff; font: inherit; cursor: pointer; transition: transform .25s, box-shadow .25s, background .25s, color .25s, border-color .25s; }
+.ci:hover, .ci:focus-visible { transform: translateY(-3px); background: var(--g-sand); color: var(--navy-deep); border-color: transparent; box-shadow: 0 18px 28px -14px rgba(0, 0, 0, .6), inset 0 1px 0 rgba(255, 255, 255, .85); }
+.ci-thumb { flex: 0 0 92px; aspect-ratio: 1400 / 1080; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 6px 14px -6px rgba(0, 0, 0, .5); }
+.ci-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ci-text { min-width: 0; flex: 1; }
+.ci-text b { display: block; font: 700 .92rem/1.25 var(--font-display); letter-spacing: -.02em; }
+.ci-text small { display: block; margin-top: 4px; font: 500 12px/1.4 var(--font-mono); opacity: .8; }
+.ci-go { flex: 0 0 auto; font-size: 18px; opacity: .6; transition: transform .25s, opacity .25s; }
+.ci:hover .ci-go, .ci:focus-visible .ci-go { opacity: 1; transform: translate(2px, -2px); }
+#lb .lb-box { max-width: min(100%, 900px); max-height: 100%; display: flex; flex-direction: column; gap: 14px; cursor: default; }
+#lb .lb-box img { max-width: 100%; max-height: calc(100vh - 150px); object-fit: contain; align-self: center; }
+.lb-cap { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; color: #fff; }
+.lb-cap[hidden] { display: none; }
+.lb-cap b { font: 700 1rem/1.3 var(--font-display); letter-spacing: -.02em; flex: 1 1 100%; }
+.lb-cap span { font: 500 13px/1.4 var(--font-mono); opacity: .85; }
+.lb-cap a { color: var(--navy-deep); background: var(--g-sand); font-weight: 700; font-size: 13px; padding: 9px 16px; border-radius: 999px; text-decoration: none; }
+@media (max-width: 760px) { .ci-list { grid-template-columns: minmax(0, 1fr); } .ci-thumb { flex-basis: 78px; } }</style>
 </head>
 <body>
 
@@ -380,8 +416,8 @@ h1 .hl { color: var(--sand); }
 <section class="s dark" id="certificados">
   <div class="beam" aria-hidden="true" style="left:0;top:0;width:38%;height:100%;background:linear-gradient(190deg,rgba(110,193,228,.4),rgba(60,143,208,.1));clip-path:polygon(0 0,100% 0,40% 100%,0 100%)"></div>
   <div class="in">
-    <div class="head"><div class="eyebrow">Certificados</div><h2>Aprendizaje continuo en Coursera</h2><p class="sub">Pasa el mouse sobre cada tarjeta, o tócala en el celular, para ver el detalle del curso.</p></div>
-        <div class="chips" role="group" aria-label="Filtrar certificados">
+    <div class="head"><div class="eyebrow">Certificados</div><h2>Aprendizaje continuo en Coursera</h2><p class="sub">Toca un certificado para verlo completo y verificarlo en Coursera.</p></div>
+        <div class="chips" id="chips" role="group" aria-label="Filtrar certificados">
       <button type="button" class="chip" data-cat="all" aria-pressed="true">Todos</button>
       <button type="button" class="chip" data-cat="movil" aria-pressed="false">Móvil</button>
       <button type="button" class="chip" data-cat="programacion" aria-pressed="false">Programación</button>
@@ -390,27 +426,27 @@ h1 .hl { color: var(--sand); }
       <button type="button" class="chip" data-cat="ia" aria-pressed="false">IA y XR</button>
       <button type="button" class="chip" data-cat="infra" aria-pressed="false">Infraestructura</button>
     </div>
-    <div class="certs" id="certs">
-      <article class="cert" tabindex="0" data-cat="ia" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-1.jpg" alt="Certificado: Introducci&#243;n a la inteligencia artificial contempor&#225;nea" loading="lazy"></span><span class="cert-name">Introducci&#243;n a la inteligencia artificial contempor&#225;nea</span></span><span class="cert-over"><small>Universidad de los Andes · Nov 2026</small><p>Curso en línea autorizado por Universidad de los Andes.</p><a class="go" href="https://coursera.org/verify/7I3L9H5QEJ0U" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="programacion ia" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-3.jpg" alt="Certificado: Desarrollo de Videojuegos en Unity: Una Introducci&#243;n" loading="lazy"></span><span class="cert-name">Desarrollo de Videojuegos en Unity: Una Introducci&#243;n</span></span><span class="cert-over"><small>Universidad de los Andes · Ene 2026</small><p>Curso en línea autorizado por Universidad de los Andes.</p><a class="go" href="https://coursera.org/verify/UE06WYO4FIRZ" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="movil programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-7.jpg" alt="Certificado: Desarrollo de aplicaciones avanzadas con Android" loading="lazy"></span><span class="cert-name">Desarrollo de aplicaciones avanzadas con Android</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Feb 2025</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/XLPI3QLDENAZ" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="movil programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-8.jpg" alt="Certificado: Programando con Java para aplicaciones Android" loading="lazy"></span><span class="cert-name">Programando con Java para aplicaciones Android</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Oct 2024</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/PTUXY7ZWSXOG" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="seguridad" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-11.jpg" alt="Certificado: Vulnerabilidades y pruebas de penetraci&#243;n" loading="lazy"></span><span class="cert-name">Vulnerabilidades y pruebas de penetraci&#243;n</span></span><span class="cert-over"><small>Universidad de los Andes · Sep 2026</small><p>Curso en línea autorizado por Universidad de los Andes.</p><a class="go" href="https://coursera.org/verify/ST4CEWFT3YW2" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-13.jpg" alt="Certificado: Design Patterns" loading="lazy"></span><span class="cert-name">Design Patterns</span></span><span class="cert-over"><small>University of Alberta · Jun 2025</small><p>Curso en línea autorizado por University of Alberta.</p><a class="go" href="https://coursera.org/verify/G1HIRPIR4BG4" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-12.jpg" alt="Certificado: Programaci&#243;n Orientada a Objetos con Python" loading="lazy"></span><span class="cert-name">Programaci&#243;n Orientada a Objetos con Python</span></span><span class="cert-over"><small>Universidad Austral · Jul 2024</small><p>Curso en línea autorizado por Universidad Austral.</p><a class="go" href="https://coursera.org/verify/W4FSBBJ59AL4" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="seguridad" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-19.jpg" alt="Certificado: Seguridad inform&#225;tica: defensa contra las artes oscuras digitales" loading="lazy"></span><span class="cert-name">Seguridad inform&#225;tica: defensa contra las artes oscuras digitales</span></span><span class="cert-over"><small>Google · Ene 2025</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/2NU1AQBXG3I5" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="ia datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-2.jpg" alt="Certificado: ChatGPT + Excel: Master Data, Make Decisions, Tell Stories" loading="lazy"></span><span class="cert-name">ChatGPT + Excel: Master Data, Make Decisions, Tell Stories</span></span><span class="cert-over"><small>Vanderbilt University · Nov 2026</small><p>Curso en línea autorizado por Vanderbilt University.</p><a class="go" href="https://coursera.org/verify/LTYK0XVROB60" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="ia" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-16.jpg" alt="Certificado: Accelerate Your Job Search with AI" loading="lazy"></span><span class="cert-name">Accelerate Your Job Search with AI</span></span><span class="cert-over"><small>Google · May 2026</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/BBEPSYRI98AI" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-17.jpg" alt="Certificado: The Path to Insights: Data Models and Pipelines" loading="lazy"></span><span class="cert-name">The Path to Insights: Data Models and Pipelines</span></span><span class="cert-over"><small>Google · May 2026</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/MOL3YNUIVZH5" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-20.jpg" alt="Certificado: Decisions, Decisions: Dashboards and Reports" loading="lazy"></span><span class="cert-name">Decisions, Decisions: Dashboards and Reports</span></span><span class="cert-over"><small>Google · May 2026</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/2CRGMI5Z3HFG" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="ia" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-4.jpg" alt="Certificado: Intro to AR/VR/MR/XR: Technologies, Applications &amp; Issues" loading="lazy"></span><span class="cert-name">Intro to AR/VR/MR/XR: Technologies, Applications &amp; Issues</span></span><span class="cert-over"><small>University of Michigan · Oct 2025</small><p>Curso en línea autorizado por University of Michigan.</p><a class="go" href="https://coursera.org/verify/5DTYNDNZ3FU1" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="seguridad programacion" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-14.jpg" alt="Certificado: Requirements Gathering for Secure Software Development" loading="lazy"></span><span class="cert-name">Requirements Gathering for Secure Software Development</span></span><span class="cert-over"><small>University of Colorado System · Abr 2025</small><p>Curso en línea autorizado por University of Colorado System.</p><a class="go" href="https://coursera.org/verify/J57XDSAAAVQG" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="infra" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-15.jpg" alt="Certificado: Administraci&#243;n de sistemas y servicios de infraestructura de TI" loading="lazy"></span><span class="cert-name">Administraci&#243;n de sistemas y servicios de infraestructura de TI</span></span><span class="cert-over"><small>Google · Mar 2025</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/5REP5O0NTW6N" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="movil programacion" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-9.jpg" alt="Certificado: Desarrollo de aplicaciones con Android" loading="lazy"></span><span class="cert-name">Desarrollo de aplicaciones con Android</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Dic 2024</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/6LIIZS7FRZQF" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-5.jpg" alt="Certificado: Process Data from Dirty to Clean" loading="lazy"></span><span class="cert-name">Process Data from Dirty to Clean</span></span><span class="cert-over"><small>Google · Nov 2024</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/E7NGT2H3P3OQ" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="infra" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-18.jpg" alt="Certificado: Sistemas operativos y t&#250;: Convertirse en un usuario avanzado" loading="lazy"></span><span class="cert-name">Sistemas operativos y t&#250;: Convertirse en un usuario avanzado</span></span><span class="cert-over"><small>Google · Jun 2024</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/VL2GAFWXQSMH" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="ia" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-6.jpg" alt="Certificado: Rob&#243;tica" loading="lazy"></span><span class="cert-name">Rob&#243;tica</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Mar 2024</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/CJ8WWHSPL7VR" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
-      <article class="cert" tabindex="0" data-cat="programacion" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-10.jpg" alt="Certificado: Desarrollo de software Agile" loading="lazy"></span><span class="cert-name">Desarrollo de software Agile</span></span><span class="cert-over"><small>University of Minnesota · Sep 2023</small><p>Curso en línea autorizado por University of Minnesota.</p><a class="go" href="https://coursera.org/verify/GEU3YS8JCG4E" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+    <div class="ci-list" id="certs">
+      <button type="button" class="ci" data-cat="ia" data-top="1" data-full="img/cert-1.jpg" data-verify="https://coursera.org/verify/7I3L9H5QEJ0U" data-title="Introducci&#243;n a la inteligencia artificial contempor&#225;nea" data-issuer="Universidad de los Andes · Nov 2026"><span class="ci-thumb"><img src="img/cert-1.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Introducci&#243;n a la inteligencia artificial contempor&#225;nea</b><small>Universidad de los Andes · Nov 2026</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="programacion ia" data-top="0" data-full="img/cert-3.jpg" data-verify="https://coursera.org/verify/UE06WYO4FIRZ" data-title="Desarrollo de Videojuegos en Unity: Una Introducci&#243;n" data-issuer="Universidad de los Andes · Ene 2026"><span class="ci-thumb"><img src="img/cert-3.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Desarrollo de Videojuegos en Unity: Una Introducci&#243;n</b><small>Universidad de los Andes · Ene 2026</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="movil programacion" data-top="1" data-full="img/cert-7.jpg" data-verify="https://coursera.org/verify/XLPI3QLDENAZ" data-title="Desarrollo de aplicaciones avanzadas con Android" data-issuer="Universidad Nacional Aut&#243;noma de M&#233;xico · Feb 2025"><span class="ci-thumb"><img src="img/cert-7.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Desarrollo de aplicaciones avanzadas con Android</b><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Feb 2025</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="movil programacion" data-top="0" data-full="img/cert-8.jpg" data-verify="https://coursera.org/verify/PTUXY7ZWSXOG" data-title="Programando con Java para aplicaciones Android" data-issuer="Universidad Nacional Aut&#243;noma de M&#233;xico · Oct 2024"><span class="ci-thumb"><img src="img/cert-8.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Programando con Java para aplicaciones Android</b><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Oct 2024</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="seguridad" data-top="1" data-full="img/cert-11.jpg" data-verify="https://coursera.org/verify/ST4CEWFT3YW2" data-title="Vulnerabilidades y pruebas de penetraci&#243;n" data-issuer="Universidad de los Andes · Sep 2026"><span class="ci-thumb"><img src="img/cert-11.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Vulnerabilidades y pruebas de penetraci&#243;n</b><small>Universidad de los Andes · Sep 2026</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="programacion" data-top="0" data-full="img/cert-13.jpg" data-verify="https://coursera.org/verify/G1HIRPIR4BG4" data-title="Design Patterns" data-issuer="University of Alberta · Jun 2025"><span class="ci-thumb"><img src="img/cert-13.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Design Patterns</b><small>University of Alberta · Jun 2025</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="programacion" data-top="1" data-full="img/cert-12.jpg" data-verify="https://coursera.org/verify/W4FSBBJ59AL4" data-title="Programaci&#243;n Orientada a Objetos con Python" data-issuer="Universidad Austral · Jul 2024"><span class="ci-thumb"><img src="img/cert-12.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Programaci&#243;n Orientada a Objetos con Python</b><small>Universidad Austral · Jul 2024</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="seguridad" data-top="0" data-full="img/cert-19.jpg" data-verify="https://coursera.org/verify/2NU1AQBXG3I5" data-title="Seguridad inform&#225;tica: defensa contra las artes oscuras digitales" data-issuer="Google · Ene 2025"><span class="ci-thumb"><img src="img/cert-19.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Seguridad inform&#225;tica: defensa contra las artes oscuras digitales</b><small>Google · Ene 2025</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="ia datos" data-top="0" data-full="img/cert-2.jpg" data-verify="https://coursera.org/verify/LTYK0XVROB60" data-title="ChatGPT + Excel: Master Data, Make Decisions, Tell Stories" data-issuer="Vanderbilt University · Nov 2026"><span class="ci-thumb"><img src="img/cert-2.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>ChatGPT + Excel: Master Data, Make Decisions, Tell Stories</b><small>Vanderbilt University · Nov 2026</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="ia" data-top="0" data-full="img/cert-16.jpg" data-verify="https://coursera.org/verify/BBEPSYRI98AI" data-title="Accelerate Your Job Search with AI" data-issuer="Google · May 2026"><span class="ci-thumb"><img src="img/cert-16.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Accelerate Your Job Search with AI</b><small>Google · May 2026</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="datos" data-top="0" data-full="img/cert-17.jpg" data-verify="https://coursera.org/verify/MOL3YNUIVZH5" data-title="The Path to Insights: Data Models and Pipelines" data-issuer="Google · May 2026"><span class="ci-thumb"><img src="img/cert-17.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>The Path to Insights: Data Models and Pipelines</b><small>Google · May 2026</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="datos" data-top="0" data-full="img/cert-20.jpg" data-verify="https://coursera.org/verify/2CRGMI5Z3HFG" data-title="Decisions, Decisions: Dashboards and Reports" data-issuer="Google · May 2026"><span class="ci-thumb"><img src="img/cert-20.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Decisions, Decisions: Dashboards and Reports</b><small>Google · May 2026</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="ia" data-top="0" data-full="img/cert-4.jpg" data-verify="https://coursera.org/verify/5DTYNDNZ3FU1" data-title="Intro to AR/VR/MR/XR: Technologies, Applications &amp; Issues" data-issuer="University of Michigan · Oct 2025"><span class="ci-thumb"><img src="img/cert-4.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Intro to AR/VR/MR/XR: Technologies, Applications &amp; Issues</b><small>University of Michigan · Oct 2025</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="seguridad programacion" data-top="0" data-full="img/cert-14.jpg" data-verify="https://coursera.org/verify/J57XDSAAAVQG" data-title="Requirements Gathering for Secure Software Development" data-issuer="University of Colorado System · Abr 2025"><span class="ci-thumb"><img src="img/cert-14.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Requirements Gathering for Secure Software Development</b><small>University of Colorado System · Abr 2025</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="infra" data-top="0" data-full="img/cert-15.jpg" data-verify="https://coursera.org/verify/5REP5O0NTW6N" data-title="Administraci&#243;n de sistemas y servicios de infraestructura de TI" data-issuer="Google · Mar 2025"><span class="ci-thumb"><img src="img/cert-15.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Administraci&#243;n de sistemas y servicios de infraestructura de TI</b><small>Google · Mar 2025</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="movil programacion" data-top="0" data-full="img/cert-9.jpg" data-verify="https://coursera.org/verify/6LIIZS7FRZQF" data-title="Desarrollo de aplicaciones con Android" data-issuer="Universidad Nacional Aut&#243;noma de M&#233;xico · Dic 2024"><span class="ci-thumb"><img src="img/cert-9.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Desarrollo de aplicaciones con Android</b><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Dic 2024</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="datos" data-top="0" data-full="img/cert-5.jpg" data-verify="https://coursera.org/verify/E7NGT2H3P3OQ" data-title="Process Data from Dirty to Clean" data-issuer="Google · Nov 2024"><span class="ci-thumb"><img src="img/cert-5.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Process Data from Dirty to Clean</b><small>Google · Nov 2024</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="infra" data-top="0" data-full="img/cert-18.jpg" data-verify="https://coursera.org/verify/VL2GAFWXQSMH" data-title="Sistemas operativos y t&#250;: Convertirse en un usuario avanzado" data-issuer="Google · Jun 2024"><span class="ci-thumb"><img src="img/cert-18.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Sistemas operativos y t&#250;: Convertirse en un usuario avanzado</b><small>Google · Jun 2024</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="ia" data-top="0" data-full="img/cert-6.jpg" data-verify="https://coursera.org/verify/CJ8WWHSPL7VR" data-title="Rob&#243;tica" data-issuer="Universidad Nacional Aut&#243;noma de M&#233;xico · Mar 2024"><span class="ci-thumb"><img src="img/cert-6.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Rob&#243;tica</b><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Mar 2024</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
+      <button type="button" class="ci" data-cat="programacion" data-top="0" data-full="img/cert-10.jpg" data-verify="https://coursera.org/verify/GEU3YS8JCG4E" data-title="Desarrollo de software Agile" data-issuer="University of Minnesota · Sep 2023"><span class="ci-thumb"><img src="img/cert-10.jpg" alt="" loading="lazy"></span><span class="ci-text"><b>Desarrollo de software Agile</b><small>University of Minnesota · Sep 2023</small></span><span class="ci-go" aria-hidden="true">↗</span></button>
     </div>
     <div class="more"><button type="button" class="btn fill" id="more-certs">Ver todos los certificados</button></div>
   </div>
@@ -434,24 +470,33 @@ h1 .hl { color: var(--sand); }
 
 <footer class="s foot"><div class="in"><span>© Kevin Mauricio Suárez Martínez</span><span>CTO · Informática en Contexto</span></div></footer>
 
-<div id="lb" role="dialog" aria-label="Diploma ampliado"><img alt=""></div>
+<div id="lb" role="dialog" aria-label="Detalle ampliado"><div class="lb-box"><img alt=""><div class="lb-cap" id="lb-cap"><b id="lb-t"></b><span id="lb-i"></span><a id="lb-v" href="#" target="_blank" rel="noopener">Verificar en Coursera ↗</a></div></div></div>
 
 <script>
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var lb = document.getElementById('lb'), lbImg = lb.querySelector('img');
+  var lb = document.getElementById('lb'), lbImg = lb.querySelector('img'), lbCap = document.getElementById('lb-cap');
   function closeLb() { lb.classList.remove('on'); lbImg.removeAttribute('src'); }
-  document.querySelectorAll('.zoom').forEach(function (z) {
-    function open() {
-      var im = z.querySelector('img');
-      lbImg.src = z.dataset.full; lbImg.alt = im ? im.alt : '';
-      lb.classList.add('on');
+  function openLb(src, alt, title, issuer, verify) {
+    lbImg.src = src; lbImg.alt = alt || title || '';
+    lbCap.hidden = !verify;
+    if (verify) {
+      document.getElementById('lb-t').textContent = title;
+      document.getElementById('lb-i').textContent = issuer;
+      document.getElementById('lb-v').href = verify;
     }
+    lb.classList.add('on');
+  }
+  document.querySelectorAll('.zoom').forEach(function (z) {
+    function open() { var im = z.querySelector('img'); openLb(z.dataset.full, im ? im.alt : ''); }
     z.addEventListener('click', open);
     z.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
   });
-  lb.addEventListener('click', closeLb);
+  document.querySelectorAll('.ci').forEach(function (c) {
+    c.addEventListener('click', function () { openLb(c.dataset.full, '', c.dataset.title, c.dataset.issuer, c.dataset.verify); });
+  });
+  lb.addEventListener('click', function (e) { if (!e.target.closest('.lb-box img, .lb-cap')) closeLb(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
 
   document.querySelectorAll('.cert').forEach(function (c) {
@@ -479,7 +524,26 @@ h1 .hl { color: var(--sand); }
       } catch (e) {}
     });
   });
-})();
+  (function () {
+    var cards = [].slice.call(document.querySelectorAll('#certs .ci'));
+    var chips = [].slice.call(document.querySelectorAll('.chip'));
+    var chipsBox = document.getElementById('chips');
+    var more = document.getElementById('more-certs');
+    var cat = 'all', expanded = false;
+    function render() {
+      cards.forEach(function (c) {
+        var match = cat === 'all' || (' ' + c.dataset.cat + ' ').indexOf(' ' + cat + ' ') > -1;
+        c.hidden = !(match && (expanded || c.dataset.top === '1'));
+      });
+      chipsBox.hidden = !expanded;
+      more.textContent = expanded ? 'Ver menos' : 'Ver todos los certificados (' + cards.length + ')';
+      more.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      chips.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.cat === cat ? 'true' : 'false'); });
+    }
+    chips.forEach(function (b) { b.addEventListener('click', function () { cat = b.dataset.cat; render(); }); });
+    more.addEventListener('click', function () { expanded = !expanded; if (!expanded) { cat = 'all'; } render(); });
+    render();
+  })();})();
 </script>
 
 </body>
