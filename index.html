@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Hoja de vida de Kevin Mauricio Suárez Martínez, CTO y cofundador de Informática en Contexto.">
+<meta name="theme-color" content="#0B2A6F">
+<meta property="og:title" content="Kevin Mauricio Suárez Martínez">
+<meta property="og:description" content="CTO y cofundador de Informática en Contexto. Desarrollo móvil, software, ciberseguridad e IA.">
+<meta property="og:type" content="website">
+<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}</style>
+<title>Hoja de Vida Virtual</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: bandas a todo el ancho que alternan azul profundo con planos de luz diagonales y blanco limpio; héroe tipo escenario con plataforma; tarjetas de cristal sobre azul */
+:root {
+  --bg: #FFFFFF;
+  --fg: #0B1F3A;
+  --muted: #52617A;
+  --line: #DCE5EF;
+  --tint: #EAF2FB;
+  --navy: #0B2A6F;
+  --navy-deep: #071A47;
+  --blue: #0A66C2;
+  --sky: #6EC1E4;
+  --sky-deep: #3C8FD0;
+  --coral: #F2542D;
+  --sand: #F3D9A4;
+  --on-navy: #FFFFFF;
+  --on-navy-soft: #B9CCEB;
+  --font-display: "Unbounded", "Segoe UI", system-ui, sans-serif;
+  --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 var(--font-body); overflow-x: hidden; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.12; }
+p { margin: 0; }
+a { color: var(--blue); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, .cert:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+.mono { font-family: var(--font-mono); }
+
+/* Bandas */
+.s { position: relative; overflow: hidden; }
+.in { position: relative; z-index: 2; max-width: 1160px; margin: 0 auto; padding-block: 96px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.dark { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, #123C8F 100%); color: var(--on-navy); }
+.tint { background: var(--tint); }
+.beam { position: absolute; z-index: 1; pointer-events: none; }
+.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--blue); display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--coral); border-radius: 3px; }
+.dark .eyebrow { color: var(--sky); }
+h2 { font-size: clamp(1.9rem, 4.6vw, 3.2rem); font-weight: 800; letter-spacing: -0.04em; max-width: 18ch; }
+.sub { color: var(--muted); margin-top: 14px; max-width: 58ch; font-size: 1.05rem; }
+.dark .sub { color: var(--on-navy-soft); }
+.head { margin-bottom: 44px; }
+
+/* Barra superior */
+.top { position: relative; z-index: 5; }
+.top .in { padding-block: 22px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.brand { font: 800 15px/1 var(--font-display); color: #fff; letter-spacing: -.02em; }
+.brand b { background: var(--sand); color: var(--navy-deep); padding: 5px 8px; border-radius: 6px; margin-right: 8px; }
+.nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font: 500 13px/1 var(--font-mono); }
+.nav a { color: #fff; text-decoration: none; padding: 8px 0; border-bottom: 2px solid transparent; opacity: .9; }
+.nav a:hover { border-color: var(--sky); opacity: 1; }
+
+/* Héroe */
+.hero .in { padding-block: 56px 96px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; }
+.hero .in > * { min-width: 0; }
+.hero .b1 { right: 0; top: 0; width: 50%; height: 100%; background: linear-gradient(165deg, var(--sky) 0%, var(--sky-deep) 100%); clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%); opacity: .95; }
+.hero .b2 { left: 0; bottom: 0; width: 100%; height: 26%; background: rgba(7, 26, 71, .55); clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%); }
+.hero .b3 { left: 6%; top: 14%; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(110, 193, 228, .35), transparent 65%); }
+.pill { display: inline-block; font: 500 12px/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, .4); padding: 9px 14px; border-radius: 999px; background: rgba(255, 255, 255, .08); }
+h1 { font-size: clamp(2.3rem, 5.8vw, 4.4rem); font-weight: 800; letter-spacing: -0.05em; margin-top: 22px; color: #fff; }
+h1 .hl { color: var(--sand); }
+.role { margin-top: 20px; font-size: 1.15rem; color: var(--on-navy-soft); max-width: 46ch; }
+.role b { color: #fff; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; min-height: 50px; padding: 0 26px; border-radius: 999px; font-weight: 700; text-decoration: none; border: 2px solid #fff; color: #fff; transition: transform .2s, background .2s, color .2s; }
+.btn.fill { background: #fff; color: var(--navy-deep); }
+.btn:hover { transform: translateY(-3px); background: var(--g-sand); border-color: var(--sand); color: var(--navy-deep); box-shadow: 0 14px 22px -10px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .8); }
+
+/* Escenario con carrusel */
+.stage { position: relative; padding-bottom: 34px; }
+.stage::after { content: ""; position: absolute; left: -6%; right: -6%; bottom: 0; height: 40px; background: linear-gradient(90deg, #BFE6F5, #8FD0EC); transform: skewX(-24deg); border-radius: 4px; box-shadow: 0 24px 40px -10px rgba(0, 0, 0, .45); }
+.car { position: relative; z-index: 2; border-radius: 26px; overflow: hidden; background: #fff; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .6); border: 4px solid rgba(255, 255, 255, .9); }
+.track { display: flex; transition: transform .6s cubic-bezier(.7, 0, .2, 1); }
+.slide { flex: 0 0 100%; margin: 0; position: relative; aspect-ratio: 4 / 4.6; background: var(--tint); display: grid; place-items: center; overflow: hidden; }
+.slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.slide.doc img { object-fit: contain; padding: 12px 12px 56px; background: #fff; transition: transform .5s; }
+.slide.doc:hover img { transform: scale(1.07); }
+.ph { display: grid; gap: 8px; place-items: center; text-align: center; padding: 24px; color: var(--muted); font: 500 13px/1.5 var(--font-mono); }
+.ph svg { width: 64px; height: 64px; stroke: var(--blue); fill: none; stroke-width: 1.6; }
+.cap { position: absolute; left: 12px; bottom: 12px; right: 12px; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+.cap span { background: var(--navy-deep); color: #fff; font: 500 12px/1.3 var(--font-mono); padding: 8px 12px; border-radius: 999px; }
+.cap small { background: var(--sand); color: var(--navy-deep); font: 700 11px/1 var(--font-mono); padding: 8px 10px; border-radius: 999px; }
+.car-ctl { position: absolute; z-index: 3; inset: auto 12px 56px 12px; display: flex; justify-content: space-between; pointer-events: none; }
+.car-ctl button { pointer-events: auto; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .92); color: var(--navy-deep); font: 700 18px/1 var(--font-body); cursor: pointer; transition: background .2s, transform .2s; box-shadow: 0 6px 16px rgba(0, 0, 0, .25); }
+.car-ctl button:hover { background: var(--sand); transform: scale(1.1); }
+.dots { position: absolute; z-index: 4; left: 0; right: 0; bottom: -4px; display: flex; justify-content: center; gap: 8px; }
+.dots button { width: 10px; height: 10px; padding: 0; border-radius: 99px; border: 0; background: rgba(11, 31, 58, .35); cursor: pointer; transition: width .3s, background .3s; }
+.dots button[aria-current="true"] { width: 30px; background: var(--navy-deep); }
+.float { position: absolute; z-index: 5; background: rgba(255, 255, 255, .96); color: var(--navy-deep); border-radius: 14px; padding: 10px 14px; font: 700 12px/1.3 var(--font-mono); box-shadow: 0 14px 30px -10px rgba(0, 0, 0, .5); animation: bob 5s ease-in-out infinite; }
+.float i { font-style: normal; color: var(--coral); }
+.float.f1 { left: -12px; top: -18px; }
+.float.f2 { right: -12px; top: 34%; animation-delay: -2.5s; }
+@keyframes bob { 50% { transform: translateY(-9px); } }
+
+/* Cifras */
+.figs { background: linear-gradient(90deg, var(--blue), var(--navy)); color: #fff; }
+.figs .in { padding-block: 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 28px; }
+.fig b { display: block; font: 800 clamp(2.4rem, 5vw, 3.6rem)/1 var(--font-display); letter-spacing: -.05em; color: var(--sand); font-variant-numeric: tabular-nums; }
+.fig span { color: #D6E4FA; font-size: 14px; }
+
+/* Perfil */
+.about { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; }
+.about > * { min-width: 0; }
+.statement { font: 700 clamp(1.3rem, 2.6vw, 1.85rem)/1.35 var(--font-display); letter-spacing: -.03em; }
+.statement em { font-style: normal; color: var(--blue); }
+.facts { display: grid; gap: 12px; }
+.fact { display: flex; gap: 14px; align-items: center; padding: 16px 18px; border-radius: 18px; background: var(--tint); transition: transform .25s, background .25s, color .25s; }
+.fact:hover { transform: translateX(6px); color: #fff; box-shadow: 0 20px 32px -16px rgba(11, 42, 111, .75); }
+.fact .ic { flex: 0 0 42px; height: 42px; border-radius: 12px; background: var(--blue); display: grid; place-items: center; }
+.fact .ic svg { width: 22px; height: 22px; stroke: #fff; fill: none; stroke-width: 1.8; }
+.fact b { display: block; font: 700 .95rem/1.3 var(--font-display); letter-spacing: -.02em; }
+.fact span { font-size: 14px; opacity: .8; }
+
+/* Experiencia: línea de tiempo */
+.jobs { position: relative; display: flex; flex-direction: column; gap: 20px; padding-left: 34px; }
+.jobs::before { content: ""; position: absolute; left: 8px; top: 8px; bottom: 8px; width: 3px; background: linear-gradient(var(--blue), var(--sky)); border-radius: 3px; }
+.job { position: relative; background: #fff; border-radius: 22px; padding: 26px; display: grid; grid-template-columns: 150px 1fr; gap: 8px 28px; box-shadow: 0 16px 36px -22px rgba(11, 42, 111, .5); transition: transform .25s, box-shadow .25s; }
+.job::before { content: ""; position: absolute; left: -34px; top: 30px; width: 19px; height: 19px; border-radius: 50%; background: #fff; border: 5px solid var(--coral); }
+.job:hover { transform: translateY(-4px); box-shadow: 0 24px 40px -20px rgba(11, 42, 111, .65); }
+.job > * { min-width: 0; }
+.when { font: 500 13px/1.6 var(--font-mono); color: var(--blue); }
+.job h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -.02em; }
+.org { font-weight: 700; color: var(--muted); margin-top: 4px; }
+.job ul { margin: 12px 0 0; padding-left: 18px; }
+.job li { margin-top: 4px; }
+
+/* Proyectos (cristal sobre azul) */
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+.proj { border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 10px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .22); backdrop-filter: blur(6px); transition: transform .3s, background .3s, border-color .3s; }
+.proj:hover { transform: translateY(-6px); background: rgba(255, 255, 255, .15); border-color: var(--sky); }
+.proj.main { grid-column: 1 / -1; background: #fff; color: var(--fg); border-color: #fff; }
+.proj.main:hover { border-color: transparent; box-shadow: 0 30px 44px -20px rgba(7, 26, 71, .75), 0 2px 0 rgba(255, 255, 255, .5); }
+.proj h3 { font-size: 1.3rem; }
+.proj p { color: var(--on-navy-soft); }
+.proj.main p { color: var(--muted); max-width: 62ch; }
+.proj.main:hover p { color: var(--fg); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+.tag { font: 500 12px/1 var(--font-mono); padding: 8px 11px; border-radius: 999px; border: 1.5px solid currentColor; transition: background .2s, color .2s, border-color .2s; }
+.tag:hover { background: var(--coral); border-color: var(--coral); color: #fff; }
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+.skills h3 { font-size: 1rem; margin-bottom: 14px; }
+.skills .tags { padding: 0; color: var(--blue); }
+
+/* Formación con miniaturas */
+.edu-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.edu { background: #fff; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 16px 36px -22px rgba(11, 42, 111, .5); transition: transform .3s, box-shadow .3s; }
+.edu:hover { transform: translateY(-6px); box-shadow: 0 28px 44px -22px rgba(11, 42, 111, .7); }
+.edu .thumb { aspect-ratio: 16 / 10; overflow: hidden; background: var(--tint); display: grid; place-items: center; }
+.edu .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .6s; }
+.edu:hover .thumb img { transform: scale(1.08); }
+.edu .thumb svg { width: 48px; height: 48px; stroke: var(--blue); fill: none; stroke-width: 1.6; }
+.edu .body { padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 6px; }
+.edu .mono { color: var(--coral); font-size: 12px; font-weight: 500; }
+.edu b { font: 700 1rem/1.25 var(--font-display); letter-spacing: -.02em; }
+.edu span.d { color: var(--muted); font-size: 14px; }
+
+/* Certificados */
+.certs { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; perspective: 1000px; }
+.cert { --rx: 0deg; --ry: 0deg; position: relative; display: block; text-align: left; font: inherit; color: var(--fg); cursor: pointer; padding: 0; border: 0; border-radius: 24px; background: #fff; overflow: hidden; transform: rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .15s ease-out, box-shadow .3s; transform-style: preserve-3d; box-shadow: 0 18px 40px -20px rgba(0, 0, 0, .6); }
+.cert:hover, .cert:focus-visible { box-shadow: 0 0 0 3px var(--sky), 0 30px 50px -20px rgba(0, 0, 0, .7); }
+.cert-top { padding: 18px; display: flex; flex-direction: column; gap: 14px; height: 100%; }
+.cert-badge { align-self: flex-start; font: 700 11px/1 var(--font-mono); background: var(--blue); color: #fff; padding: 7px 10px; border-radius: 999px; letter-spacing: .06em; }
+.cert-art { flex: none; aspect-ratio: 1400 / 1080; border-radius: 16px; background: var(--tint); display: grid; place-items: center; overflow: hidden; }
+.cert-art img { width: 100%; height: 100%; object-fit: cover; }
+.cert-art svg { width: 54px; height: 54px; stroke: var(--blue); fill: none; stroke-width: 1.6; }
+.cert-name { font: 700 .98rem/1.25 var(--font-display); letter-spacing: -.02em; }
+.cert-over { position: absolute; inset: 0; background: linear-gradient(160deg, var(--blue), var(--navy)); color: #fff; padding: 22px; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; transform: translateY(101%); transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+.cert:hover .cert-over, .cert:focus-visible .cert-over, .cert.open .cert-over { transform: translateY(0); }
+.cert-over small { font: 500 12px/1.4 var(--font-mono); color: var(--sand); }
+.cert-over p { font-size: 14px; line-height: 1.5; }
+.cert-over .go { align-self: flex-start; background: var(--sand); color: var(--navy-deep); font-weight: 700; font-size: 13px; padding: 8px 14px; border-radius: 999px; }
+.shine { position: absolute; inset: 0; pointer-events: none; z-index: 2; background: radial-gradient(circle at var(--mx, 50%) var(--my, 0%), rgba(110, 193, 228, .35), transparent 55%); opacity: 0; transition: opacity .25s; }
+.cert:hover .shine { opacity: 1; }
+
+/* Contacto */
+.contact-s .in { padding-block: 104px; }
+.contact-s h2 { max-width: 14ch; }
+.contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 40px; }
+.contact a, .contact .cell { border-radius: 22px; padding: 22px; text-decoration: none; color: #fff; overflow-wrap: anywhere; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .28); transition: background .25s, color .25s, transform .25s; text-align: left; font: inherit; cursor: pointer; display: block; width: 100%; }
+.contact a:hover, .contact .cell:hover { color: var(--navy-deep); transform: translateY(-4px); box-shadow: 0 22px 34px -16px rgba(0, 0, 0, .6); }
+.contact small { display: block; font: 500 11px/1.4 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: 6px; }
+.contact b { font: 700 1.1rem/1.3 var(--font-display); letter-spacing: -.02em; }
+.note { text-align: center; font-size: 13px; color: var(--on-navy-soft); padding-top: 48px; }
+.foot { background: var(--navy-deep); color: var(--on-navy-soft); }
+.foot .in { padding-block: 24px; font-size: 13px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 860px) {
+  .hero .in { grid-template-columns: 1fr; padding-block: 40px 72px; }
+  .hero .b1 { width: 100%; height: 52%; top: auto; bottom: 0; clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%); }
+  .about { grid-template-columns: 1fr; }
+  .job { grid-template-columns: 1fr; }
+  .in { padding-block: 72px; }
+  .float.f1 { left: 4px; top: -16px; } .float.f2 { right: 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .float { animation: none; }
+  .track, .cert, .cert-over { transition: none; }
+  .btn:hover, .proj:hover, .edu:hover, .job:hover, .fact:hover, .contact a:hover, .contact .cell:hover { transform: none; }
+}
+:root {
+  --g-sand: radial-gradient(120% 90% at 18% 0%, rgba(255, 255, 255, .8), transparent 55%), linear-gradient(145deg, #FFF3D6 0%, #F3D9A4 48%, #DDB46A 100%);
+  --g-blue: radial-gradient(120% 140% at 0% 0%, rgba(110, 193, 228, .65), transparent 55%), linear-gradient(145deg, #1A5FC4 0%, #0B2A6F 62%, #071A47 100%);
+}
+/* Profundidad al pasar el mouse */
+.fact, .proj.main, .contact a, .contact .cell { position: relative; isolation: isolate; }
+.fact::before, .proj.main::before, .contact a::before, .contact .cell::before { content: ""; position: absolute; inset: 0; border-radius: inherit; opacity: 0; transition: opacity .35s; z-index: -1; pointer-events: none; }
+.fact::before { background: var(--g-blue); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .35), inset 0 -14px 22px -14px rgba(0, 0, 0, .55); }
+.proj.main::before, .contact a::before, .contact .cell::before { background: var(--g-sand); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), inset 0 -16px 26px -16px rgba(150, 100, 20, .5); }
+.fact:hover::before, .proj.main:hover::before, .contact a:hover::before, .contact .cell:hover::before { opacity: 1; }
+.fact:hover .ic { background: rgba(255, 255, 255, .16); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45), 0 8px 16px rgba(0, 0, 0, .4); }
+.proj:hover { box-shadow: 0 26px 40px -22px rgba(0, 0, 0, .65), inset 0 1px 0 rgba(255, 255, 255, .35); }
+.job:hover, .edu:hover { background: linear-gradient(160deg, #FFFFFF 0%, #EEF5FC 100%); }
+/* Foto del héroe */
+.car img.portrait { display: block; width: 100%; aspect-ratio: 4 / 4.6; object-fit: cover; }
+/* Olas del perfil */
+.waves-wrap { position: absolute; left: 0; right: 0; bottom: 0; height: 230px; overflow: hidden; z-index: 1; pointer-events: none; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 50%); mask-image: linear-gradient(to bottom, transparent, #000 50%); }
+.waves-wrap svg { position: absolute; left: 0; top: 0; width: 200%; height: 100%; animation: drift 40s linear infinite; }
+@keyframes drift { to { transform: translateX(-50%); } }
+/* Diplomas ampliables y certificados */
+.thumb.zoom { position: relative; cursor: zoom-in; }
+.thumb.zoom::after { content: "Ampliar ↗"; position: absolute; right: 10px; bottom: 10px; background: var(--navy-deep); color: #fff; font: 500 11px/1 var(--font-mono); padding: 7px 10px; border-radius: 999px; opacity: 0; transform: translateY(6px); transition: opacity .25s, transform .25s; }
+.edu:hover .thumb.zoom::after, .thumb.zoom:focus-visible::after { opacity: 1; transform: none; }
+.cert-over .go { text-decoration: none; }
+#lb { position: fixed; inset: 0; z-index: 100; background: rgba(7, 26, 71, .92); display: none; place-items: center; cursor: zoom-out; padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+#lb.on { display: grid; }
+#lb img { max-width: min(100%, 880px); max-height: 100%; border-radius: 12px; background: #fff; box-shadow: 0 30px 80px rgba(0, 0, 0, .6); }
+@media (prefers-reduced-motion: reduce) { .waves-wrap svg { animation: none; } }.tag.star { background: var(--coral); border-color: var(--coral); color: #fff; font-weight: 500; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; }
+.chip { font: 500 13px/1 var(--font-mono); padding: 11px 16px; border-radius: 999px; border: 1.5px solid rgba(255, 255, 255, .45); background: transparent; color: #fff; cursor: pointer; transition: background .25s, color .25s, border-color .25s, transform .2s; }
+.chip:hover { border-color: var(--sand); transform: translateY(-2px); }
+.chip[aria-pressed="true"] { background: var(--g-sand); color: var(--navy-deep); border-color: var(--sand); box-shadow: 0 10px 18px -8px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .8); }
+.more { display: flex; justify-content: center; margin-top: 34px; }
+.more[hidden] { display: none; }</style>
+</head>
+<body>
+
+<div class="s dark hero" id="inicio">
+  <div class="beam b3" aria-hidden="true"></div>
+  <div class="beam b1" aria-hidden="true"></div>
+  <div class="beam b2" aria-hidden="true"></div>
+  <div class="top">
+    <div class="in">
+      <div class="brand"><b>KS</b>Kevin Suárez</div>
+      <nav class="nav" aria-label="Secciones">
+        <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#formacion">Formación</a><a href="#certificados">Certificados</a><a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
+  <div class="in">
+    <div>
+      <span class="pill">CTO · Ingeniería de Sistemas · Instrumentador quirúrgico</span>
+      <h1>Kevin Mauricio <span class="hl">Suárez Martínez</span></h1>
+      <p class="role"><b>Cofundador y CTO de Informática en Contexto.</b> Construyo software que resuelve problemas reales, con más de 10 años de experiencia en el sector salud.</p>
+      <div class="cta">
+        <a class="btn fill" href="https://wa.me/573176478863?text=Hola%20Kevin%2C%20vi%20tu%20hoja%20de%20vida%20y%20quiero%20hablar%20contigo" target="_blank" rel="noopener">Hablemos →</a>
+        <a class="btn" href="https://www.linkedin.com/in/kevin-suarez-927910299" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="float f1"><i>●</i> CTO · Informática en Contexto</div>
+      <div class="float f2"><i>●</i> Software y arquitectura</div>
+      <div class="car"><img class="portrait" src="img/foto.jpg" alt="Retrato de Kevin Suárez" style="object-position: 50% 18%"><div class="cap"><span>Kevin Suárez</span><small>CTO</small></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="s figs">
+  <div class="in">
+    <div class="fig"><b>10+</b><span>años en el sector salud</span></div>
+    <div class="fig"><b>3</b><span>diplomas y títulos</span></div>
+    <div class="fig"><b>20+</b><span>certificaciones en Coursera</span></div>
+    <div class="fig"><b>1</b><span>empresa cofundada</span></div>
+  </div>
+</div>
+
+<section class="s" id="perfil">
+  <div class="waves-wrap" aria-hidden="true">
+    <svg viewBox="0 0 1440 230" preserveAspectRatio="none">
+      <defs><path id="wv" d="M-720 100 C -540 40,-180 160,0 100 S 540 160,720 100 S 1260 160,1440 100 S 1980 160,2160 100" fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"/></defs>
+      <use href="#wv" x="0" y="0" stroke="#6EC1E4" stroke-width="2.5" opacity=".9"/>
+      <use href="#wv" x="-90" y="20" stroke="#F3D9A4" stroke-width="2.5"/>
+      <use href="#wv" x="-200" y="40" stroke="#BFE3F4" stroke-width="2.5"/>
+      <use href="#wv" x="-300" y="60" stroke="#CBDDE3" stroke-width="2.5"/>
+      <use href="#wv" x="-420" y="80" stroke="#6EC1E4" stroke-width="2" opacity=".55"/>
+      <use href="#wv" x="-520" y="100" stroke="#F3D9A4" stroke-width="2" opacity=".8"/>
+    </svg>
+  </div>
+  <div class="in">
+    <div class="head"><div class="eyebrow">Perfil</div><h2>Una trayectoria poco común</h2></div>
+    <div class="about">
+      <p class="statement">Soy <em>cofundador y CTO</em> de Informática en Contexto y tecnólogo en gestión de software y sistemas. Con más de 10 años en el sector salud, y como asesor médico quirúrgico en Líneas Hospitalarias desde 2018, con experiencia en artroscopia y medicina deportiva, construyo tecnología que entiende cómo trabajan los equipos clínicos.</p>
+      <div class="facts">
+        <div class="fact"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-5 8 5v12M9 20v-6h6v6"/></svg></div><div><b>Salud</b><span>Asesor médico quirúrgico en Líneas Hospitalarias</span></div></div>
+        <div class="fact"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></div><div><b>Software</b><span>Técnico y tecnólogo en sistemas</span></div></div>
+        <div class="fact"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/></svg></div><div><b>Emprendimiento</b><span>Cofundador y CTO de Informática en Contexto</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s tint" id="experiencia">
+  <div class="in">
+    <div class="head"><div class="eyebrow">Experiencia</div><h2>Dónde he trabajado</h2></div>
+    <div class="jobs">
+      <article class="job">
+        <div class="when">Ago 2025 – Actual</div>
+        <div><h3>Cofundador y CTO</h3><p class="org">Informática en Contexto</p>
+          <ul><li>Lidero la parte técnica de la empresa: desarrollo móvil, frontend y arquitectura de software.</li><li>Especialidades certificadas: robótica, programación con Python y Java, desarrollo de aplicaciones Android, videojuegos con Unity, ciberseguridad, inteligencia artificial y realidad virtual.</li><li>Clientes satisfechos con soluciones web, dashboards y automatización con IA.</li></ul><div class="tags" style="color:var(--blue); margin-top:14px"><span class="tag star">Robótica</span><span class="tag star">Programación Orientada a Objetos con Python</span><span class="tag star">Programando con Java para aplicaciones Android</span><span class="tag">Desarrollo de aplicaciones avanzadas con Android</span><span class="tag">Desarrollo de Videojuegos en Unity</span><span class="tag">Vulnerabilidades y pruebas de penetración</span><span class="tag">Design Patterns</span><span class="tag">Introducción a la inteligencia artificial contemporánea</span><span class="tag">Realidad virtual y aumentada (AR/VR/MR/XR)</span></div></div>
+      </article>
+      <article class="job">
+        <div class="when">Jun 2018 – Actual</div>
+        <div><h3>Asesor médico quirúrgico</h3><p class="org">Líneas Hospitalarias</p>
+          <ul><li>Participación en cirugías de ortopedia, columna, maxilofacial, cirugía infantil y reemplazos articulares.</li><li>Experiencia destacada en artroscopia y medicina deportiva.</li></ul><div class="tags" style="color:var(--blue); margin-top:14px"><span class="tag star">Artroscopia</span><span class="tag star">Medicina deportiva</span><span class="tag">Ortopedia</span><span class="tag">Columna</span><span class="tag">Maxilofacial</span><span class="tag">Cirugía infantil</span><span class="tag">Reemplazos articulares</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="s dark" id="proyectos">
+  <div class="beam" aria-hidden="true" style="right:0;top:0;width:42%;height:100%;background:linear-gradient(170deg,rgba(110,193,228,.5),rgba(60,143,208,.15));clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)"></div>
+  <div class="in">
+    <div class="head"><div class="eyebrow">Proyectos</div><h2>Lo que he construido</h2></div>
+    <div class="projects">
+      <article class="proj main">
+        <h3>Informática en Contexto</h3>
+        <p>Startup tecnológica con sede en Rionegro, Antioquia, fundada junto a Kenny Cárdenas. Desarrolla dashboards SaaS, sitios web, automatizaciones con IA y servicios de ciberseguridad para empresas en Medellín, toda Colombia y el exterior. Mi enfoque es el desarrollo móvil, el frontend y la arquitectura de software.</p>
+        <div class="tags" style="color:var(--blue)"><span class="tag">Dashboards SaaS</span><span class="tag">IA y automatización</span><span class="tag">Ciberseguridad</span><span class="tag">Desarrollo web</span></div>
+        <a class="btn" style="align-self:flex-start;color:var(--navy-deep);border-color:var(--navy-deep)" href="https://www.informaticaencontexto.com/" target="_blank" rel="noopener">Visitar el sitio ↗</a>
+      </article>
+      <article class="proj"><h3>Dashboards SaaS</h3><p>Paneles en tiempo real con métricas y gráficas interactivas para que las empresas decidan con sus propios datos.</p><div class="tags"><span class="tag">React</span><span class="tag">Recharts</span><span class="tag">SaaS</span></div></article>
+      <article class="proj"><h3>Automatización con IA</h3><p>Agentes que atienden, agendan y hacen seguimiento a clientes por WhatsApp e Instagram, las 24 horas.</p><div class="tags"><span class="tag">n8n</span><span class="tag">OpenAI</span><span class="tag">WhatsApp</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="habilidades">
+  <div class="in">
+    <div class="head"><div class="eyebrow">Habilidades</div><h2>Herramientas del oficio</h2></div>
+    <div class="skills">
+      <div><h3>Tecnología</h3><div class="tags"><span class="tag">Desarrollo móvil</span><span class="tag">Android</span><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Frontend</span><span class="tag">Arquitectura de software</span><span class="tag">Patrones de diseño</span><span class="tag">Agile</span><span class="tag">Unity</span><span class="tag">Ciberseguridad</span><span class="tag">React</span><span class="tag">n8n</span><span class="tag">OpenAI</span></div></div>
+      <div><h3>Gestión</h3><div class="tags"><span class="tag">Gestión de proyectos</span><span class="tag">Liderazgo</span><span class="tag">Emprendimiento</span></div></div>
+      <div><h3>Sector salud</h3><div class="tags"><span class="tag">Artroscopia</span><span class="tag">Medicina deportiva</span><span class="tag">Ortopedia</span><span class="tag">Columna</span><span class="tag">Maxilofacial</span><span class="tag">Cirugía infantil</span><span class="tag">Reemplazos articulares</span><span class="tag">Asesoría médico quirúrgica</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="s tint" id="formacion">
+  <div class="in">
+    <div class="head"><div class="eyebrow">Formación</div><h2>Estudios y diplomas</h2></div>
+    <div class="edu-list">
+      <div class="edu"><div class="thumb zoom" tabindex="0" role="button" aria-label="Ampliar diploma" data-full="img/diploma-tecnico.jpg"><img src="img/diploma-tecnico.jpg" alt="Diploma de Técnico Profesional en Procesos de Programación de Software"></div><div class="body"><span class="mono">AGOSTO 2025 · NUEVA AMÉRICA</span><b>Técnico Profesional en Procesos de Programación de Software</b><span class="d">Fundación de Educación Superior Nueva América, Bogotá</span></div></div>
+      <div class="edu"><div class="thumb zoom" tabindex="0" role="button" aria-label="Ampliar diploma" data-full="img/diploma-tecnologo.jpg"><img src="img/diploma-tecnologo.jpg" alt="Diploma de Tecnólogo en Gestión de Software y Sistemas"></div><div class="body"><span class="mono">MARZO 2026 · NUEVA AMÉRICA</span><b>Tecnólogo en Gestión de Software y Sistemas</b><span class="d">Fundación de Educación Superior Nueva América, Bogotá</span></div></div>
+      <div class="edu"><div class="thumb zoom" tabindex="0" role="button" aria-label="Ampliar diploma" data-full="img/diploma-instrumentacion.png"><img src="img/diploma-instrumentacion.png" alt="Diploma de Profesional en Instrumentación Quirúrgica, Corporación Universitaria Rafael Núñez"></div><div class="body"><span class="mono">DICIEMBRE 2016 · RAFAEL NÚÑEZ</span><b>Profesional en Instrumentación Quirúrgica</b><span class="d">Corporación Universitaria Rafael Núñez, Cartagena. Inscrito en el ReTHUS desde 2017.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="s dark" id="certificados">
+  <div class="beam" aria-hidden="true" style="left:0;top:0;width:38%;height:100%;background:linear-gradient(190deg,rgba(110,193,228,.4),rgba(60,143,208,.1));clip-path:polygon(0 0,100% 0,40% 100%,0 100%)"></div>
+  <div class="in">
+    <div class="head"><div class="eyebrow">Certificados</div><h2>Aprendizaje continuo en Coursera</h2><p class="sub">Pasa el mouse sobre cada tarjeta, o tócala en el celular, para ver el detalle del curso.</p></div>
+        <div class="chips" role="group" aria-label="Filtrar certificados">
+      <button type="button" class="chip" data-cat="all" aria-pressed="true">Todos</button>
+      <button type="button" class="chip" data-cat="movil" aria-pressed="false">Móvil</button>
+      <button type="button" class="chip" data-cat="programacion" aria-pressed="false">Programación</button>
+      <button type="button" class="chip" data-cat="seguridad" aria-pressed="false">Seguridad</button>
+      <button type="button" class="chip" data-cat="datos" aria-pressed="false">Datos</button>
+      <button type="button" class="chip" data-cat="ia" aria-pressed="false">IA y XR</button>
+      <button type="button" class="chip" data-cat="infra" aria-pressed="false">Infraestructura</button>
+    </div>
+    <div class="certs" id="certs">
+      <article class="cert" tabindex="0" data-cat="ia" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-1.jpg" alt="Certificado: Introducci&#243;n a la inteligencia artificial contempor&#225;nea" loading="lazy"></span><span class="cert-name">Introducci&#243;n a la inteligencia artificial contempor&#225;nea</span></span><span class="cert-over"><small>Universidad de los Andes · Nov 2026</small><p>Curso en línea autorizado por Universidad de los Andes.</p><a class="go" href="https://coursera.org/verify/7I3L9H5QEJ0U" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="programacion ia" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-3.jpg" alt="Certificado: Desarrollo de Videojuegos en Unity: Una Introducci&#243;n" loading="lazy"></span><span class="cert-name">Desarrollo de Videojuegos en Unity: Una Introducci&#243;n</span></span><span class="cert-over"><small>Universidad de los Andes · Ene 2026</small><p>Curso en línea autorizado por Universidad de los Andes.</p><a class="go" href="https://coursera.org/verify/UE06WYO4FIRZ" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="movil programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-7.jpg" alt="Certificado: Desarrollo de aplicaciones avanzadas con Android" loading="lazy"></span><span class="cert-name">Desarrollo de aplicaciones avanzadas con Android</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Feb 2025</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/XLPI3QLDENAZ" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="movil programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-8.jpg" alt="Certificado: Programando con Java para aplicaciones Android" loading="lazy"></span><span class="cert-name">Programando con Java para aplicaciones Android</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Oct 2024</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/PTUXY7ZWSXOG" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="seguridad" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-11.jpg" alt="Certificado: Vulnerabilidades y pruebas de penetraci&#243;n" loading="lazy"></span><span class="cert-name">Vulnerabilidades y pruebas de penetraci&#243;n</span></span><span class="cert-over"><small>Universidad de los Andes · Sep 2026</small><p>Curso en línea autorizado por Universidad de los Andes.</p><a class="go" href="https://coursera.org/verify/ST4CEWFT3YW2" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-13.jpg" alt="Certificado: Design Patterns" loading="lazy"></span><span class="cert-name">Design Patterns</span></span><span class="cert-over"><small>University of Alberta · Jun 2025</small><p>Curso en línea autorizado por University of Alberta.</p><a class="go" href="https://coursera.org/verify/G1HIRPIR4BG4" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="programacion" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-12.jpg" alt="Certificado: Programaci&#243;n Orientada a Objetos con Python" loading="lazy"></span><span class="cert-name">Programaci&#243;n Orientada a Objetos con Python</span></span><span class="cert-over"><small>Universidad Austral · Jul 2024</small><p>Curso en línea autorizado por Universidad Austral.</p><a class="go" href="https://coursera.org/verify/W4FSBBJ59AL4" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="seguridad" data-top="1"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-19.jpg" alt="Certificado: Seguridad inform&#225;tica: defensa contra las artes oscuras digitales" loading="lazy"></span><span class="cert-name">Seguridad inform&#225;tica: defensa contra las artes oscuras digitales</span></span><span class="cert-over"><small>Google · Ene 2025</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/2NU1AQBXG3I5" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="ia datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-2.jpg" alt="Certificado: ChatGPT + Excel: Master Data, Make Decisions, Tell Stories" loading="lazy"></span><span class="cert-name">ChatGPT + Excel: Master Data, Make Decisions, Tell Stories</span></span><span class="cert-over"><small>Vanderbilt University · Nov 2026</small><p>Curso en línea autorizado por Vanderbilt University.</p><a class="go" href="https://coursera.org/verify/LTYK0XVROB60" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="ia" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-16.jpg" alt="Certificado: Accelerate Your Job Search with AI" loading="lazy"></span><span class="cert-name">Accelerate Your Job Search with AI</span></span><span class="cert-over"><small>Google · May 2026</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/BBEPSYRI98AI" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-17.jpg" alt="Certificado: The Path to Insights: Data Models and Pipelines" loading="lazy"></span><span class="cert-name">The Path to Insights: Data Models and Pipelines</span></span><span class="cert-over"><small>Google · May 2026</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/MOL3YNUIVZH5" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-20.jpg" alt="Certificado: Decisions, Decisions: Dashboards and Reports" loading="lazy"></span><span class="cert-name">Decisions, Decisions: Dashboards and Reports</span></span><span class="cert-over"><small>Google · May 2026</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/2CRGMI5Z3HFG" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="ia" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-4.jpg" alt="Certificado: Intro to AR/VR/MR/XR: Technologies, Applications &amp; Issues" loading="lazy"></span><span class="cert-name">Intro to AR/VR/MR/XR: Technologies, Applications &amp; Issues</span></span><span class="cert-over"><small>University of Michigan · Oct 2025</small><p>Curso en línea autorizado por University of Michigan.</p><a class="go" href="https://coursera.org/verify/5DTYNDNZ3FU1" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="seguridad programacion" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-14.jpg" alt="Certificado: Requirements Gathering for Secure Software Development" loading="lazy"></span><span class="cert-name">Requirements Gathering for Secure Software Development</span></span><span class="cert-over"><small>University of Colorado System · Abr 2025</small><p>Curso en línea autorizado por University of Colorado System.</p><a class="go" href="https://coursera.org/verify/J57XDSAAAVQG" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="infra" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-15.jpg" alt="Certificado: Administraci&#243;n de sistemas y servicios de infraestructura de TI" loading="lazy"></span><span class="cert-name">Administraci&#243;n de sistemas y servicios de infraestructura de TI</span></span><span class="cert-over"><small>Google · Mar 2025</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/5REP5O0NTW6N" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="movil programacion" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-9.jpg" alt="Certificado: Desarrollo de aplicaciones con Android" loading="lazy"></span><span class="cert-name">Desarrollo de aplicaciones con Android</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Dic 2024</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/6LIIZS7FRZQF" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="datos" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-5.jpg" alt="Certificado: Process Data from Dirty to Clean" loading="lazy"></span><span class="cert-name">Process Data from Dirty to Clean</span></span><span class="cert-over"><small>Google · Nov 2024</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/E7NGT2H3P3OQ" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="infra" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-18.jpg" alt="Certificado: Sistemas operativos y t&#250;: Convertirse en un usuario avanzado" loading="lazy"></span><span class="cert-name">Sistemas operativos y t&#250;: Convertirse en un usuario avanzado</span></span><span class="cert-over"><small>Google · Jun 2024</small><p>Curso en línea autorizado por Google.</p><a class="go" href="https://coursera.org/verify/VL2GAFWXQSMH" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="ia" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-6.jpg" alt="Certificado: Rob&#243;tica" loading="lazy"></span><span class="cert-name">Rob&#243;tica</span></span><span class="cert-over"><small>Universidad Nacional Aut&#243;noma de M&#233;xico · Mar 2024</small><p>Curso en línea autorizado por Universidad Nacional Aut&#243;noma de M&#233;xico.</p><a class="go" href="https://coursera.org/verify/CJ8WWHSPL7VR" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+      <article class="cert" tabindex="0" data-cat="programacion" data-top="0"><span class="shine"></span><span class="cert-top"><span class="cert-badge">COURSERA</span><span class="cert-art"><img src="img/cert-10.jpg" alt="Certificado: Desarrollo de software Agile" loading="lazy"></span><span class="cert-name">Desarrollo de software Agile</span></span><span class="cert-over"><small>University of Minnesota · Sep 2023</small><p>Curso en línea autorizado por University of Minnesota.</p><a class="go" href="https://coursera.org/verify/GEU3YS8JCG4E" target="_blank" rel="noopener">Verificar certificado ↗</a></span></article>
+    </div>
+    <div class="more"><button type="button" class="btn fill" id="more-certs">Ver todos los certificados</button></div>
+  </div>
+</section>
+
+<section class="s dark contact-s" id="contacto">
+  <div class="beam" aria-hidden="true" style="right:0;top:0;width:55%;height:100%;background:linear-gradient(160deg,var(--sky),var(--sky-deep));opacity:.9;clip-path:polygon(45% 0,100% 0,100% 100%,0 100%)"></div>
+  <div class="in">
+    <div class="eyebrow">Contacto</div>
+    <h2>Trabajemos juntos</h2>
+    <div class="contact">
+      <button type="button" class="cell" data-copy="ksuarezm09@gmail.com"><small>Correo · toca para copiar <span id="s1" aria-live="polite"></span></small><b>ksuarezm09@gmail.com</b></button>
+      <button type="button" class="cell" data-copy="317-647-8863"><small>Teléfono · toca para copiar <span id="s2" aria-live="polite"></span></small><b>317-647-8863</b></button>
+      <a href="https://wa.me/573176478863" target="_blank" rel="noopener"><small>WhatsApp</small><b>Escríbeme ↗</b></a>
+      <div class="cell" style="cursor:default"><small>Ubicación</small><b>Rionegro, Antioquia</b></div>
+      <a href="https://www.linkedin.com/in/kevin-suarez-927910299" target="_blank" rel="noopener"><small>LinkedIn</small><b>kevin-suarez ↗</b></a>
+      <a href="https://www.informaticaencontexto.com/" target="_blank" rel="noopener"><small>Mi empresa</small><b>informaticaencontexto.com ↗</b></a>
+    </div>
+  </div>
+</section>
+
+<footer class="s foot"><div class="in"><span>© Kevin Mauricio Suárez Martínez</span><span>CTO · Informática en Contexto</span></div></footer>
+
+<div id="lb" role="dialog" aria-label="Diploma ampliado"><img alt=""></div>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var lb = document.getElementById('lb'), lbImg = lb.querySelector('img');
+  function closeLb() { lb.classList.remove('on'); lbImg.removeAttribute('src'); }
+  document.querySelectorAll('.zoom').forEach(function (z) {
+    function open() {
+      var im = z.querySelector('img');
+      lbImg.src = z.dataset.full; lbImg.alt = im ? im.alt : '';
+      lb.classList.add('on');
+    }
+    z.addEventListener('click', open);
+    z.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  });
+  lb.addEventListener('click', closeLb);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+
+  document.querySelectorAll('.cert').forEach(function (c) {
+    c.addEventListener('pointermove', function (e) {
+      if (e.pointerType !== 'mouse' || reduce) return;
+      var r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      c.style.setProperty('--ry', ((x - .5) * 14) + 'deg');
+      c.style.setProperty('--rx', ((.5 - y) * 14) + 'deg');
+      c.style.setProperty('--mx', (x * 100) + '%');
+      c.style.setProperty('--my', (y * 100) + '%');
+    });
+    c.addEventListener('pointerleave', function () { c.style.setProperty('--rx', '0deg'); c.style.setProperty('--ry', '0deg'); });
+    c.addEventListener('click', function (e) { if (e.target.closest('a')) return; c.classList.toggle('open'); });
+    c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.classList.toggle('open'); } });
+  });
+
+  document.querySelectorAll('[data-copy]').forEach(function (b, idx) {
+    b.addEventListener('click', function () {
+      var s = document.getElementById('s' + (idx + 1));
+      try {
+        navigator.clipboard.writeText(b.dataset.copy).then(function () {
+          s.textContent = '· copiado';
+          setTimeout(function () { s.textContent = ''; }, 1800);
+        }, function () {});
+      } catch (e) {}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
